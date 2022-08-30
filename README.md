@@ -1,6 +1,6 @@
-# resturant
+# restaurant
 
-This is a simple website for "Keens Chophouse" resturant.Here are 2 videos of the website design & how it works.
+This is a simple website for "Keens Chophouse" restaurant.Here are 2 videos of the website design & how it works.
 
 [1.zip](https://github.com/Raha-CA/resturant/files/9455337/1.zip)
 
