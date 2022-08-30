@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/Menu.css">
+</head>
+<header>
+  <nav>
+      <div class="navMenu"></div>
+      <a href="/">
+        <svg>
+          <symbol id="s-text">
+              <text text-anchor="middle" x="52%" y="80%">O r d e r N o w !  </text>
+            </symbol>
+            <g class = "g-ants">
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+          </svg>
+    </a>
+        <ul class="navbar">
+          <li class="nav-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/products">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact_us">Contact Us</a>
+          </li>
+          <div class="dot"></div>
+        </ul>  
+  </nav>
+</header>
+<body>
+  <div class="log"></div>
+  <div class="login">
+    <div class="login-box">
+      <!-- <h2>SHARE YOUR COMMENT</h2> -->
+      <section>
+        <div class="content">
+          <h2>SHARE YOUR COMMENT</h2>
+          <h2>SHARE YOUR COMMENT</h2>
+        </div>
+      </section>
+      <form action="/contact_us" method="post">
+        <div class="user-box">
+          <input type="text" required="" type="text" name="user" class="input"/>
+          <label class="label">User Name</label>
+        </div>
+        <div class="user-box">
+          <input required="" type="text" name="email" class="input"/>
+          <label class="label">Email</label>
+        </div>
+        <div class="user-box">
+          <label class="label">Gender</label>
+        <div class="container">
+        <ul>
+          <li>
+            <input type="radio" id="f-option" value="1" name="gender" class="input">
+            <label for="f-option">Female</label>
+            <div class="check"></div>
+          </li>
+          <li>
+            <input type="radio" id="s-option" value="2" name="gender" class="input">
+            <label for="s-option">Male</label>
+            <div class="check"><div class="inside"></div></div>
+          </li>
+        </div>
+        <div class="user-box">
+           <input required="" type="text" name="comment" class="input"/>
+           <label class="label">Comment</label>
+       </div> 
+       <a>
+        <input type="submit" value="submit" class="button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+       </a>
+     </form>
+    </div>
+  </div>
+</body>
+</html>

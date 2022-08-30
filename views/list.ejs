@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="in-b">
+    <div class="table">
+<h2 class="i-ti">Users Comments</h2>
+    <table border="1" id="users" class="tab">
+        <tr>
+            <th>id</th>
+            <th>User Name</th>
+            <th>Email Address</th>
+            <th>Gender</th>
+            <th>Comment</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=data.user %></td>
+            <td><%=data.email %></td>
+            <td><%=data.gender %></td>
+            <td><%=data.comment %></td>
+            <td><a href="/users/edit/<%=data.id%>">Edit</a></td>
+            <td><a href="/users/delete/<%=data.id%>">Delete</a></td>
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+    </table>
+    </div>
+</body>
+</html>
+
+<!-- <script>
+    $(document).ready(function(){
+
+        load_data();
+
+        function load_data()
+        {
+            $.ajax({
+                url:"http://localhost:3000/users/action",
+                method:"POST",
+                data:{action:fetch},
+                dataType: "JSON",
+                success:function(data)
+                {
+                    var html = '';
+                    if(data.data.length > 0)
+                    {
+                        for(var count = 0; count<data.data.length;count++)
+                        {
+                            html +=`
+                            <tr>
+                                <td>`+data.data[count].user+`</td>
+                                <td>`+data.data[count].email+`</td>
+                                <td>`+data.data[count].gender+`</td>
+                                <td>`+data.data[count].comment+`</td>
+                                <td></td>
+                            </tr>
+                            `;
+                        }
+                    }
+                    $('#users body').html(html);
+                }
+            })
+        }
+    })
+</script> -->

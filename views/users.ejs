@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/" class="order">
+                <strong>Order Now!</strong>
+            </a>
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/products">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact_us">Contact Us</a>
+                </li>
+             </ul> 
+        </nav>
+    </header>
+    <main class="contact">
+        <div class="c-right">
+            <div class="c-left">
+                <form class="form" action="/contact_us" method="post">
+                    <label>User Name:</label>
+                    <input type="text" class="user" name="user" /><br/>
+                    <label>Email:</label>
+                    <input type="text" class="email" name="email" /><br/>
+                    <label>Gender:</label>
+                    <input type="radio" value="1" class="gender" name="gender"/><label>Female</label>
+                    <input type="radio" value="2" class="gender" name="gender"/><label>Male</label><br/>
+                    <label>Comment:</label>
+                    <input type="text" name="comment" class="comment"/><br/>
+                    <input type="submit" value="send" class="button">
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
